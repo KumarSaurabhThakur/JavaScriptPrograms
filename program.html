@@ -1,22 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programs by Kumar Saurabh</title>
+
+    <style>
+        body {
+            padding-top: 10%;
+            text-align: center;
+            background-color: lightblue;
+            color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+        }
+
+        header {
+            border: 0.5px solid gray;
+            padding: 50px;
+            background-color: rgb(74, 204, 255);
+            border-radius: 20px;
+            width: 25%;
+            margin: auto;
+            box-shadow: 0px 0px 10px black;
+            font-size: x-large;
+        }
+        
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: medium;
+        }
+
+        button {
+            background-color: #a5ffa8;
+            color: darkgreen;
+            padding: 10px 20px;
+            margin: 5px 2px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: medium;
+        }
+
+        p{
+            padding:5px 10px 5px 10px;
+            margin-left: -10px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Simple Calculator</h1>
+
+        <p><input type="text" id="num1" placeholder="Enter First Number" /></p>
+        <p><input type="text" id="num2" placeholder="Enter Second Number" /></p>
+        <p><button id="btnAdd">ADD. +</button>
+            <button id="btnSub">SUB. -</button>
+            <button id="btnMul">MUL. *</button>
+            <button id="btnDiv">DIV. /</button>
+        </p>
+        <p><input type="text" id="resultbox" readonly /></p>
+        <p id="result"></p>
     </header>
-    <p><input type="text" id="num1" placeholder="Enter First Number"/></p>
-    <p><input type="text" id="num2" placeholder="Enter Second Number"/></p>
-    <p><button id="btnAdd">ADD.</button>
-    <button id="btnSub">SUB.</button>
-    <button id="btnMul">MUL.</button>
-    <button id="btnDiv">DIV.</button></p>
-    <p><input type="text" id="resultbox" readonly/></p>
-    <p id="result"></p>
 
 
     <script src="script.js">
@@ -24,6 +74,7 @@
     </script>
 
 
-    
+
 </body>
+
 </html>
